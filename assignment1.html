@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+        COMP125-Assignment1
+        Author: Jayson Tuazon
+        Date:   05/26/2023
+        Filename: assignment1.html
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Multiplication Table</title>
+
+    <!--To load the assignment1.css to assignment1.html and give the webpage it's design-->
+    <link rel="stylesheet" type="text/css" href="assignment1.css">
+</head>
+<body>
+    <h1>Multiplication Table</h1> 
+
+    <!--<table> tag is used to create table structure & id="MultiplicationTable" attribute is used in order for javascript to target and manipulate this element-->
+    <table id="MultiplicationTable"></table> 
+
+    <!--<div class="container"> acts as a wrapper to the element to provide a structure layout of the content-->
+    <div class="container">
+
+        <!--div class=InputGroup> is used in order to group together input fields and their associated components-->
+        <div class="InputGroup">
+
+            <!--This is used to display the label "Rows:" and uses the "rows" as it's id-->
+            <label for="rows">Rows:</label>
+
+            <!--This uses the textbox as a means of user input. It has default value of "20". The id="rows" to associate itself with the label.-->
+            <input type="text" id="rows" value="20">
+
+            <!--This is used to display the label "Columns:" and uses the "columns" as it's id-->
+            <label for="columns">Columns:</label>
+
+            <!--This uses the textbox as a means of user input. It has default value of "20". The id="columns" to associate itself with the label.-->
+            <input type="text" id="columns" value="20">
+
+            <!--This <button> tag is used in order to invoke or activate the "drawTable()" function after clicking the button-->
+            <button onclick="drawTable()">Generate Table</button>
+        </div>
+    </div>
+    <footer>
+        &copy;&nbsp;Copyright Jayson Tuazon - 301313973 - COMP125 - Assignment 1
+    </footer>
+
+    <!--To load the assignment1.js script to assignment1.html to create the dynamic multiplication table-->
+    <script src="assignment1.js"></script>
+</body>
+</html>
